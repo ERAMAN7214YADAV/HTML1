@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, th, td{
+            border-bottom: 2px solid yellowgreen;
+            border-collapse: collapse;
+            padding: 10px;
+            text-align: center;
+            color: blue;
+            
+        }
+        table{
+            width: 100%;
+        }
+        tr:hover{
+            background-color:rgba(255,228,196,0.389);
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <th>Name</th>
+            <th colspan="2">Marks</th>
+            <th>Total Marks</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Rehman</td>
+                <td>Sub1</td>
+                <td>99</td>
+                <td rowspan="2">192</td>
+            </tr>
+            <tr>
+                <td>Sub2</td>
+                <td>98</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Asif</td>
+                <td>Sub1</td>
+                <td>99</td>
+                <td rowspan="2">192</td>
+            </tr>
+            <tr>
+                <td>Sub2</td>
+                <td>98</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

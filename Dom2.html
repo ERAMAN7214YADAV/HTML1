@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation form </title>
+</head>
+<body>
+    <form onsubmit="return confirmSubmission()">
+        <label for="name"> Name: </label>
+        <input type="text" id="name" name="name" required>
+        <label for="email"> Email: </label>
+        <input type="email" id="email" name="name" required>
+        <button type="submit"> Submit </button>
+    </form>
+    <script> 
+        function confirmSubmission(){
+            return confirm("Are you sure you want to submit the form?");
+        }
+        for(let i=1; i<=10; i++){
+            if(i==5){
+                alert("Break statement executed")
+                break;
+            }
+            document.write(i+"br");
+        }
+        confirm("Click ok to continue")
+        let n1 = Number(promt("Enter the first value"));
+        let n2 = Number(promt("Enter the Second value"));
+
+    </script>
+    
+</body>
+</html>

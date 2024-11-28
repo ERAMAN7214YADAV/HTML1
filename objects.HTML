@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var student =  {
+            name: "Rakesh",
+            marks: 34,
+            roll: 19,
+            intro: function(){
+                console.log(this.name + " bearing roll no."+ this.roll + " has scored " +this.marks);
+            }
+        };
+        student.name = "Ajay";
+            console.log(student.name);
+            console.log(student["name"]);
+            console.log(student.roll);
+            student.intro();
+            var student = new Object();
+            student.name = 'Rakesh';
+            student.roll = 19;
+            student.marks = 34;
+            student.intro = function(){
+                console.log(this.name + " bearing roll no."+ this.roll + " has scored " +this.marks);
+            };
+            console.log(student.name);
+            console.log(student.roll);
+            student.intro();
+            //object.create
+            var studentPrototype = {
+                intro: function() {
+                    console.log(this.name + " bearing roll no."+ this.roll + " has scored " +this.marks);
+                }
+            };
+var student = Object.create(studentPrototype);
+student.name = "Rakesh";
+student.roll = 19;
+student.marks = 34;
+console.log(student.name);
+console.log(student.roll);
+student.intro();
+//constructor function
+function Student(name, roll, marks) {
+this.name = name;
+this.marks = marks;
+this.intro = function() {
+console.log(this.name + " bearing roll no."+ this.roll + " has scored " +this.marks);
+};
+}
+var student = new Student('Rakesh', 19, 34);
+console.log(student.name);
+console.log(student.roll);
+student.intro();
+// class 
+class student {
+    constructor(name, roll, marks){
+        this.name = name;
+        this.roll = roll;
+        this.marks = marks;
+    }
+    intro() {
+        console.log(${this.name}, bearing roll no. ${this.roll} has scored ${this.marks})
+    }
+}
+var student = new Student('Rakesh', 19, 34);
+console.log(student.name);
+console.log(student.roll);
+student.intro();
+//factory function
+function createStudent(name, roll, marks){
+    return {
+        name: name,
+        roll: roll,
+        marks: marks,
+        intro: function() {
+            console.log() 
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    </script>
+</body>
+</html>

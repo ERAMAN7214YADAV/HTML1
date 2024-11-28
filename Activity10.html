@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aman Yadav- Web Developer & Designer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+        }
+        section {
+            margin: 20px 0;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        .projects, .contact-form {
+            width: 100%;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 12px;
+            color: #666;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+            border: none;
+        }
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Aman Yadav</h1>
+    <p>Web Developer & Designer</p>
+</header>
+
+<div class="container">
+    <section class="about-me">
+        <h2>About Me</h2>
+        <p>Hello! I'm Aman Yadav, a passionate web developer with a love for creating beautiful and functional websites. I have experience in HTML, CSS, JavaScript, and more.</p>
+    </section>
+
+    <section class="projects">
+        <h2>My Projects</h2>
+        <div>
+            <h3>Project 1</h3>
+            <p>A description of Project 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div>
+            <h3>Project 2</h3>
+            <p>A description of Project 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+
+        <h3>Project Statistics</h3>
+        <table>
+            <tr>
+                <th>Project</th>
+                <th>Technologies</th>
+                <th>Completion Date</th>
+            </tr>
+            <tr>
+                <td>Project 1</td>
+                <td>HTML, CSS, JavaScript</td>
+                <td>June 2024</td>
+            </tr>
+            <tr>
+                <td>Project 2</td>
+                <td>React, Node.js</td>
+                <td>August 2024</td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="contact-form">
+        <h2>Contact Me</h2>
+        <form action="#" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="preferred-contact">Preferred Contact Method</label>
+            <select id="preferred-contact" name="preferred-contact">
+                <option value="email">Email</option>
+                <option value="phone">Phone</option>
+            </select>
+
+            <label for="newsletter">
+                <input type="checkbox" id="newsletter" name="newsletter">
+                Subscribe to newsletter
+            </label>
+
+            <input type="submit" value="Send">
+        </form>
+    </section>
+</div>
+
+<footer>
+    &copy; 2024 Aman Yadav. All rights reserved.
+</footer>
+
+</body>
+</html>
